@@ -1,0 +1,76 @@
+@-ms-viewport { width: device-width; }
+
+* {
+    font-family: sans-serif;
+font-variant: small-caps;
+text-decoration: none;
+}
+body {
+    height: 400vh
+}
+
+p {
+    text-align: right;
+}
+
+@media (min-width: 1025px) {
+    p >a:last-of-type {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    p>a:first-of-type {
+        display: none;
+    }
+}
+
+.content {
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.useragent {
+  position: absolute;
+  z-index: 1;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+span {
+    letter-spacing: 1px;
+}
+
+h2>span::after {
+    content: "px";
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+h1>span{
+    opacity: 0.3;
+}
+
+
+
+@media (orientation: landscape) {
+    h3::after {
+    content: "Landscape";
+  }
+}
+
+@media (orientation: portrait) {
+  h3::after {
+    content: "Portrait";
+  }
+}

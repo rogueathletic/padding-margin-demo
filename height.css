@@ -38,9 +38,9 @@ p {
 .useragent {
   position: absolute;
   z-index: 1;
-  bottom: 10%;
+  bottom: 50px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   text-align: center;
 }
 

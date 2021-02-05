@@ -15,6 +15,11 @@ header {
     background-color: #009ca6;
 }
 
+a {
+    text-decoration: none;
+    filter: invert()
+}
+
 ul {
     display: flex;
     justify-content: flex-end;
@@ -49,7 +54,7 @@ img {
 }
 
 .device-focus-width {
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
 
 }
 
@@ -104,7 +109,7 @@ img {
 
 @media (max-width:767px) {
     section {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 15px;
+        padding-right: 015px;
     }
 }
